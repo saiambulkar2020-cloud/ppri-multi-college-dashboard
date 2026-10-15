@@ -1,0 +1,5 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="16" fill="#0B1F3A"/>
+  <path d="M0 46L64 18V64H0Z" fill="#0EA5A8" opacity=".34"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="white">PI</text>
+</svg>

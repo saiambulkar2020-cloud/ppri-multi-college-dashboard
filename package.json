@@ -1,0 +1,47 @@
+{
+  "name": "ppri-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --config vitest.config.ts",
+    "test:coverage": "vitest run --config vitest.config.ts --coverage",
+    "demo:generate": "node --import tsx scripts/generate-demo-data.ts",
+    "demo:synthetic": "node --import tsx scripts/generate-synthetic-demo.ts",
+    "auth:setup": "node --import tsx scripts/setup-admin-access.ts",
+    "lint": "eslint . --ignore-pattern .next"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.3",
+    "exceljs": "^4.4.0",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.31.0",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "recharts": "^3.10.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "4.2.1",
+    "tsx": "^4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "^4.1.10"
+  },
+  "type": "module"
+}
